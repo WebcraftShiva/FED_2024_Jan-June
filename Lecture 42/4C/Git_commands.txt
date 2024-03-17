@@ -1,0 +1,13 @@
+*git --version
+
+* git Installation: https://www.git-scm.com/
+* configuration: 
+   -> git config --global user.name "webcraftShiva"
+   -> git config --global user.email "shivam.webcraft@gmail.com"
+
+
+* git init
+* git status
+* git add -A /or/ git add .
+* git commit -m "first commit"  /or/ git commit -m file_name
+* git log
