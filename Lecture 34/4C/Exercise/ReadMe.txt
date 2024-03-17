@@ -1,0 +1,1 @@
+Create a program to change background color of the page randomly and also create a button which has use event to stop background color change with that random color value on the button.
