@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+        // ##creating a element: heading
+        //1.1document.createElement('h1')
+        //1.2creating variable storing elemnt inside it:
+        var heading = document.createElement('h1')
+        console.log(heading)
+        // 2.adding className:
+        heading.className = "title"
+        // 3.adding id:
+        heading.id = "firstid";
+        //4. add style:
+        heading.style.backgroundColor = "orange"
+        //5. add text node inside a heading element:
+        //5.1
+        //document.createTextNode("Javascript- DOM Element adding")
+        //5.2
+        const text = document.createTextNode("Javascript- DOM Element adding")
+        // 6. appendingChild:
+        heading.appendChild(text)
+
+        //7. appendingchild on document:
+        document.body.appendChild(heading)
+    </script>
+</body>
+</html>

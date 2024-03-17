@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: grey;">
+    <center>
+    <div class="weeks" style="font-size: large;">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
+    </center>
+</body>
+<script>
+    const week  = document.querySelector('.weeks')
+    console.log(week);
+    console.log(week.children)
+    console.log(week.children[1])
+    console.log(week.children[1].innerHTML)
+
+    //parent to child:
+    console.log(week.firstElementChild)
+    console.log(week.lastElementChild)
+
+    //child to parent
+    const firstDay = document.querySelector('.day')
+    console.log(firstDay);
+    console.log(firstDay.parentElement)
+    console.log(firstDay.nextElementSibling) // next to monday means sibling
+
+
+</script>
+</html>
