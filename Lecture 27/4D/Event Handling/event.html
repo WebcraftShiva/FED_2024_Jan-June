@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body style="background-color: grey;"></body>
+       
+    <ul id="unord">
+        <li id><img id="myimg"></li>
+        <li></li>
+    </ul>
+
+    <script>
+        //Event bubbling:
+        document.getElementById('unord').addEventListener('click',function(e){
+            console.log("Clicked ul inside thing")
+        },true)
+
+        document.getElementById('myimg').addEventListener('click',function(e){
+            console.log("Ok finally capturing happening")
+        },true)
+    </script>
+
+    
+</body>
+</html>

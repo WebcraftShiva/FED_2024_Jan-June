@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<!-- We want to add list of language in li -->
+<body style="background-color: grey;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        // function addlang(langName) {
+        //     const li = document.createElement('li');
+        //     li.innerHTML = `${langName}`
+        //     // attaching langName value with li
+        //     document.querySelector('.language').appendChild(li)
+        // }
+        // addlang('Python')
+        // addlang('Typescript')
+
+        // This one is better as compare to above one:
+
+        function addnwlang(langName){
+            const li = document.createElement('li');
+            //
+            // const addText = document.createTextNode(langName);
+            // li.appendChild(addText)
+            // writing above 2 line of code in optimise way:
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        addnwlang('Typescript')
+        addnwlang('Java')
+
+        // Edit: 2nd element of li
+        // const lang2nd = document.querySelector("li:nth-child(2)")
+        // const newli = document.createElement('li')
+        // newli.textContent = "Ruby"
+        // lang2nd.replaceWith(newli)
+
+        //Edit: 1st element of li: give ti student
+        const lang1st = document.querySelector("li:first-child")
+        const newli = document.createElement('li')
+        newli.textContent = "C++"
+        lang1st.replaceWith(newli)
+
+
+        // remove element:
+        const lastlang = document.querySelector("li:last-child")
+        lastlang.remove()
+
+    </script>
+</body>
+</html>

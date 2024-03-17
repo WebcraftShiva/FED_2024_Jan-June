@@ -1,0 +1,5 @@
+EVEN NUMBER:
+Make a single page application of calculator to perform calculation operation. Make sure to implement error handling of all types in calculator and also try use html and css inside JS.
+
+ODD NUMBER:
+Make a single page application which has a feature to add item in cart and remove item from cart.
