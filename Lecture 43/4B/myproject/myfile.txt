@@ -1,0 +1,17 @@
+Hello, My name is shivam singh
+
+
+
+
+git --version
+git config --global usern.name ""
+git config --global user.email ""
+git config --list
+
+mkdir
+cd 
+cd ..
+type nul > myfile.txt
+echo Hello > myfile.txt
+
+git init 
