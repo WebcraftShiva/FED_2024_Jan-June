@@ -1,0 +1,24 @@
+#Basic Linux commands:
+
+1)mkdir myproject(makes a new directory)
+2)cd myproject(to change directory)
+3)cd ..(previous directory)
+4)type nul > myfile.txt(creates empty txt file)
+5)echo (to write inside a file)
+6)dir or ls (To see files in directory)
+7)dir /a(To see all files incluing hidden files)
+
+*git --version
+
+* git Installation: https://www.git-scm.com/
+* configuration: 
+   -> git config --global user.name "webcraftShiva"
+   -> git config --global user.email "shivam.webcraft@gmail.com"
+
+
+* git init
+* git status
+* git add -A /or/ git add .
+* git commit -m "first commit"  /or/ git commit -m file_name
+* git log
+
