@@ -1,6 +1,5 @@
 import React from 'react'
 import Products from '../Products/Products'
-import Form from '../form/Form'
 
 const ShoppingList = () => {
 
@@ -30,8 +29,6 @@ const ShoppingList = () => {
 
   return (
     <section>
-
-    <Form/>
 
         {products.map((product,idk)=>{
             return <Products key={idk}
