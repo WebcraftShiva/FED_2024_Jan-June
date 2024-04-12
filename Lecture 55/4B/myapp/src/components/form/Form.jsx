@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import '../form/Form.css'
 
-const Form = (props) => {
+const Form = () => {
 
     const [name,setName] = useState('')
     const [price,setPrice] = useState(0)
     const [img,setImg] = useState('')
-
 
     const nameChangeHandler = (event)=> {
         setName(event.target.value)
@@ -21,15 +20,9 @@ const Form = (props) => {
 
     const formSubmitHandler = (event) =>{
         event.preventDefault();
-        // console.log(name)
-        // console.log(price)
-        // console.log(img)
-
-        setName('')
-        setPrice(0)
-        setImg('')
-
-        props.addProduct({name,price,imgUrl:img})
+        console.log(name)
+        console.log(price)
+        console.log(img)
     }
 
   return (
@@ -37,16 +30,16 @@ const Form = (props) => {
         <div>
             <label htmlFor='name'>Name:
             </label>
-            <input type='text' id='name' placeholder='Product Name' onChange={nameChangeHandler} value={name}/>
+            <input type='text' id='name' placeholder='Product Name' onChange={nameChangeHandler}/>
             <div>
             <label htmlFor='name'>Price:
             </label>
-            <input type='number' id='name' placeholder='Product Price' onChange={priceChangeHandler} value={price}/>
+            <input type='number' id='name' placeholder='Product Price' onChange={priceChangeHandler}/>
         </div>
         <div>
             <label htmlFor='name'>Image Url:
             </label>
-            <input type='text' id='img' placeholder='Product Img Url' onChange={imgUrlChangeHandler} value={img}/>
+            <input type='text' id='img' placeholder='Product Img Url' onChange={imgUrlChangeHandler}/>
         </div>
         <button>Create Product</button>
         </div>

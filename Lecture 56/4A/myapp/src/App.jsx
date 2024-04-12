@@ -1,13 +1,15 @@
-import ShoppingList from "./components/shoppingList/ShoppingList"
 // import StateDemo from "./components/StateDemo"
+import UseEff from './components/UseEff'
 
-const App = () => {
+function App() {
+
   return (
-    <div>
-        {/* <StateDemo/> */}
-        <ShoppingList/>
-    </div>
+    <>
+    {/* <StateDemo/> */}
+    <UseEff/>
+    </>
   )
 }
 
 export default App
+

@@ -4,12 +4,12 @@
     border-radius: 8px;
 }
 
-.product img {
+.product img{
     width: 360px;
     height: 240px;
 }
 
-.product h1{
+.product h2{
     margin-left: 70px;
     padding-bottom: 0px;
 }
