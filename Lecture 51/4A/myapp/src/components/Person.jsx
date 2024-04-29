@@ -6,7 +6,7 @@ const Person = () => {
     <article className='person'>
         <h3>Name: Yash</h3>
         <h4>Age: 23</h4>
-        <p>Crush: Piggy.</p>
+        <p>Crush: Sonam</p>
     </article>
   )
 }
